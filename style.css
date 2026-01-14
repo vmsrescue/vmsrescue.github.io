@@ -3,6 +3,8 @@
 	deep red:	rgba(73,31,31,1)
 */
 
+
+
 /* 1/12 new styles start */
 
 .bg-color {
@@ -13,11 +15,15 @@
 	font-family: 'Chocolate Classical Sans' !important;
 }
 
+.hero-font {
+	font-family: 'Ranga' !important;
+}
+
 /* Pure CSS Gradient Background Animation from Codepen user Manuel Pinto */
 #home {
 	background: linear-gradient(
 	  	90deg,
-	  	rgba(0,0,0,1) 0%,
+		rgba(0,0,0,1) 0%,
 	  	rgba(0,0,0,1) 40%,
 	  	rgba(15,42,131,1) 40%,
 	  	rgba(15,42,131,1) 55%,
@@ -29,13 +35,12 @@
 	  	rgba(0,0,0,1) 100%
 	);
 	background-size: 350% 100%;
-	animation: bg-ambulance 35s linear infinite;
+	animation: bg-ambulance 5s linear infinite;
 }
 
 @keyframes bg-ambulance {
 	0% {background-position: 0% 50%;}
-	50% {background-position: 100% 50%;}
-	100% {background-position: 0% 50%;}
+	100% {background-position: 100% 50%;}
 }
 /**/
 
@@ -64,7 +69,19 @@ hr {height: .1em !important; background-color: rgba(255,255,255,0.5) !important;
   	border: 0;
 }
 
+.cta {
+	color: white !important;
+	transition: background-color 0.25s ease, transform 0.25s ease !important;
+}
+
+	.cta:hover {
+		background-color: rgba(6,199,9,0.75) !important;
+		transform: scale(1.1) !important;
+	}
+
 /* 1/12 new styles end */
+	
+	
 
 /* navbar start */
 
@@ -76,17 +93,6 @@ hr {height: .1em !important; background-color: rgba(255,255,255,0.5) !important;
     z-index: 100 !important; /* make sure it floats above content */
     background-color: rgba(255,255,255,0) !important; /* transparent white */
 }
-
-/* 1/10:
-.logo {
-	background-color: white !important;
-	transition: transform 0.25s ease !important;
-}
-
-.logo:hover {
-	transform: scale(1.25) !important;
-}
-*/
 
 .logo {
 	color: white !important;
@@ -105,16 +111,6 @@ hr {height: .1em !important; background-color: rgba(255,255,255,0.5) !important;
 
 	.anchor:hover {
 		background-color: rgba(15,42,131,1) !important;
-		transform: scale(1.1) !important;
-	}
-
-.cta {
-	color: white !important;
-	transition: background-color 0.25s ease, transform 0.25s ease !important;
-}
-
-	.cta:hover {
-		background-color: rgba(6,199,9,0.75) !important;
 		transform: scale(1.1) !important;
 	}
 

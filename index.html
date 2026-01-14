@@ -4,59 +4,74 @@
 
 <head>
 	
-	<!--html5 international character encoding support across browsers-->
+	<!-- html5 international character encoding support across browsers -->
 	<meta charset="utf-8">
+	<!-- html5 international character encoding support across browsers -->
 	
-	<!--meta tags for enhanced search engine visibility-->
+	<!-- font preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- font preconnect -->
+	
+	<!-- bulma -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
+	<!-- bulma -->
+	
+	<!-- animations/icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- animations/icons -->
+	
+	<!-- font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Ranga&display=swap">
+	<!-- font -->
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- custom css -->
+	
+	<!-- meta tags for enhanced search engine visibility -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- 150 char limit description -->
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Abhinav Kumar">
 	<meta name="robots" content="index, follow">
-	<!-- colors mobile browser address bar -->
+	<!-- mobile browser address bar color -->
 	<meta name="theme-color" content="#1f1f49">
 	
-	<!--opengraph protocol for previewing site on social messaging-->
+	<link rel="canonical" href="https://vmsrescue.com">
+	
+	<!-- opengraph protocol for social messaging -->
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="" />
-	<meta property="og:title" content="[ vms • rescue ]: SAP Fieldglass consulting, integration, and process optimization" />
+	<meta property="og:title" content="" />
 	<meta property="og:url" content="https://vmsrescue.com" />
 	<meta property="og:description" content="" />
 	<meta property="og:locale" content="en_US" />
+	<!-- opengraph protocol for social messaging -->
 	
-	<title>[ vms • rescue ]: SAP Fieldglass consulting, integration, and process optimization</title>
+	<title>[|] vms rescue — Integration & process design for SAP Fieldglass users</title>
 	
+	<!--
 	<link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon">
 	<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	
 	<link rel="preload" href="" as="image" importance="high">
-	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&display=swap">
-	
-	<link rel="canonical" href="https://vmsrescue.com">
+	-->
 	
 	<style>
 		
-		html {
-			scroll-behavior: smooth;
-		}
-		
 		.hero {
-			/* background-image: url(''), url('') !important;
+			/* 
+			background-image: url('image_procurement_process.png') !important;
 			background-repeat: no-repeat !important;
 			background-position: center !important;
-			background-size: cover !important;*/
+			background-size: cover !important;
+			*/
 			height: 100vh;
 		}
 		
@@ -67,20 +82,17 @@
 <body>
 	
 	<!-- navbar -->
-	<header class="navbar main-font">
+	<header id="menu" class="navbar main-font">
 		
 		<div class="container">
 			
 			<div class="navbar-brand">
 				
 				<!-- logo -->
-				<a class="navbar-item logo" href="#home">
-					[ vms • rescue ]
-					<!-- 1/10: <img src="logo.webp" alt="Campgaign Logo" /> -->
-				</a>
+				<a class="navbar-item logo" href="#home">[|] vms rescue</a>
 				
 				<!-- hamburger -->
-				<span class="navbar-burger" data-target="navbarMenuHeroC">
+				<span class="navbar-burger" data-target="navbarMobile">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -89,7 +101,7 @@
 				
 			</div>
 			
-			<div class="navbar-menu" id="navbarMenuHeroC">
+			<div class="navbar-menu" id="navbarMobile">
 				
 				<!-- nav anchors -->
 				<div class="navbar-end">
@@ -113,17 +125,28 @@
 	
 	<!-- hero -->
 	<section id="home" class="hero is-fullheight main-font">
+		
 		<div class="hero-body">
-			<div class="container has-text-left">
-				<h1 class="title animate__animated animate__slower	animate__fadeInDown">
-					[ vms • rescue ]
+			
+			<div class="container has-text-left has-text-white" style="display: flex; flex-direction: column-reverse;">
+				
+				<h1 class="hero-font is-size-5-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInUp mb-4">
+					For SAP Fieldglass buyers & users
 				</h1>
-				<h2 class="subtitle animate__animated animate__slower	animate__fadeInLeft">
-					SAP Fieldglass consulting, integration, and process optimization
+				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
+					Contingent & services process design
 				</h2>
-				<br>
+				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
+					Hypercare & production engineering
+				</h2>
+				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
+					Integration architecture services
+				</h2>
+				
 			</div>
+			
 		</div>
+		
 	</section>
 	
 	<!-- customers -->
@@ -230,7 +253,8 @@
 	<footer id="footer" class="footer main-font">
 		<div class="content has-text-centered">
 			<p>
-				<a class="title js-modal-trigger" target="" id="cta" data-target="contactForm">
+				<strong>[|]</strong><br><br>
+				<a class="title js-modal-trigger" id="cta" data-target="contactForm">
 					<i class="fa-solid fa-concierge-bell footer-social"></i>
 				</a>
 				<a class="title" href="https://help.sap.com/docs/SAP_Fieldglass" target="_blank">
@@ -240,8 +264,7 @@
 					<i class="fa-brands fa-linkedin footer-social"></i>
 				</a>
 				<br><br>
-				<strong>[ vms • rescue ]</strong><br><br>
-				Site developed by Abhinav Kumar, CCWP | 2026
+				Site by Abhinav Kumar | 2026
 	    	</p>
 	  	</div>
 	</footer>
@@ -259,6 +282,7 @@
 				<input type="hidden" name="_next" value="https://vmsrescue.com/?sent=true">
 				<input type="hidden" name="_subject" value="New email from vmsrescue.com">
 				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_autoresponse" value="Thank you for your message.">
 				
 				<!-- name -->
 				<div class="field">
@@ -319,51 +343,70 @@
 	<!-- js -->	
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	
-	<script>
-		// smooth scrolling javascript for non-Safari browsers
-		$(document).ready(function(){
-		
-			// Add smooth scrolling to all links
-			$("a").on('click', function(event) {
-			
-				// Make sure this.hash has a value before overriding default behavior
-				if (this.hash !== "") {
-				
-					// Prevent default anchor click behavior
-					event.preventDefault();
-				
-					// Store hash
-					var hash = this.hash;
-				
-					// Using jQuery's animate() method to add smooth page scroll
-					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-				
-					$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
-					
-						// Add hash (#) to URL when done scrolling (default click behavior)
-						window.location.hash = hash;
-				
-					});
-			
-				} // End if
-		
-			});
-	
-		});
-	</script>
+<script>
+  // Cross-browser smooth scroll with easing & navbar offset
+  function smoothScroll(targetSelector, duration = 600) {
+    const target = document.querySelector(targetSelector);
+    if (!target) return;
+
+    const navbar = document.querySelector('.navbar');
+    const navbarOffset = navbar ? navbar.offsetHeight : 0;
+
+    const startY = window.pageYOffset;
+    const targetY = target.getBoundingClientRect().top + startY - navbarOffset;
+    const diff = targetY - startY;
+    let startTime = null;
+
+    // cubic easing in/out
+    function easeInOutCubic(t) {
+      return t < 0.5
+        ? 4 * t * t * t
+        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const time = timestamp - startTime;
+      const progress = Math.min(time / duration, 1);
+      const eased = easeInOutCubic(progress);
+
+      window.scrollTo(0, startY + diff * eased);
+
+      if (time < duration) {
+        requestAnimationFrame(step);
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  // attach smooth scroll to all in-page links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (!document.querySelector(href)) return;
+
+      e.preventDefault();
+      smoothScroll(href, 600); // adjust duration for cinematic feel
+    });
+  });
+</script>
+
 	
 	<script>
 		// navbar burger
 		$(document).ready(function() {
-			
-			// Check for click events on the navbar burger icon
-			$(".navbar-burger").click(function() {
-				
-				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-				$(".navbar-burger").toggleClass("is-active");
-				$(".navbar-menu").toggleClass("is-active");
-				
-			});
+		  // Hamburger toggle
+		  $(".navbar-burger").click(function() {
+		    $(".navbar-burger").toggleClass("is-active");
+		    $(".navbar-menu").toggleClass("is-active");
+		  });
+
+		  // Close menu when any navbar item is clicked
+		  $(".navbar-menu .navbar-item").click(function() {
+		    $(".navbar-burger").removeClass("is-active");
+		    $(".navbar-menu").removeClass("is-active");
+		  });
 		});
 	</script>
 	
@@ -407,10 +450,6 @@
 				}
 		}
   	</script>
-	
-	<script>
-		document.getElementById("cta").addEventListener("click", myFunction);
-	</script>
 	
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
