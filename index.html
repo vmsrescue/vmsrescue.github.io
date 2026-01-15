@@ -4,76 +4,58 @@
 
 <head>
 	
-	<!-- html5 international character encoding support across browsers -->
+	<!-- html5 x-browser int'l char encoding support -->
 	<meta charset="utf-8">
-	<!-- html5 international character encoding support across browsers -->
 	
-	<!-- font preconnect -->
+	<!-- pre -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- font preconnect -->
+	<link rel="preload" href="photo_abhi.png" as="image" importance="high">
+	<link rel="preload" href="style.css" as="style">
 	
-	<!-- bulma -->
+	<!-- bulma css framework -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
-	<!-- bulma -->
-	
-	<!-- animations/icons -->
+	<!-- fontawesome, animate on scroll, & animate css library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<!-- animations/icons -->
-	
-	<!-- font -->
+	<!-- google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Ranga&display=swap">
-	<!-- font -->
-	
 	<!-- custom css -->
 	<link rel="stylesheet" href="style.css">
-	<!-- custom css -->
 	
-	<!-- meta tags for enhanced search engine visibility -->
+	<!-- seo meta tags; description: 60 chars max; theme-color: deep red color for mobile browser address bar -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- 150 char limit description -->
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<meta name="description" content="Integration, engineering, and process solutions for SAP Fieldglass buyer companies.">
+	<meta name="keywords" content=""> -->
 	<meta name="author" content="Abhinav Kumar">
 	<meta name="robots" content="index, follow">
-	<!-- mobile browser address bar color -->
-	<meta name="theme-color" content="#1f1f49">
+	<meta name="theme-color" content="#491F1F">
 	
 	<link rel="canonical" href="https://vmsrescue.com">
 	
-	<!-- opengraph protocol for social messaging -->
+	<!-- social messaging preview -->
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="" />
-	<meta property="og:title" content="" />
+	<meta property="og:image" content="photo_abhi.png" />
+	<meta property="og:title" content="[|] VMS Rescue - Abhinav Kumar | 2026" />
 	<meta property="og:url" content="https://vmsrescue.com" />
-	<meta property="og:description" content="" />
+	<meta property="og:description" content="Integration, engineering & process solutions for SAP Fieldglass buyers companies." />
 	<meta property="og:locale" content="en_US" />
-	<!-- opengraph protocol for social messaging -->
 	
-	<title>[|] vms rescue — Integration & process design for SAP Fieldglass users</title>
+	<title>[|] VMS Rescue — Integration, engineering, and process solutions for SAP Fieldglass buyers.</title>
 	
 	<!--
 	<link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon">
 	<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-	
-	<link rel="preload" href="" as="image" importance="high">
+
 	-->
 	
 	<style>
 		
-		.hero {
-			/* 
-			background-image: url('image_procurement_process.png') !important;
-			background-repeat: no-repeat !important;
-			background-position: center !important;
-			background-size: cover !important;
-			*/
-			height: 100vh;
-		}
+		/* must stay in html file, not css file */
+		html {scroll-behavior: smooth;}
 		
 	</style>
 	
@@ -89,7 +71,7 @@
 			<div class="navbar-brand">
 				
 				<!-- logo -->
-				<a class="navbar-item logo" href="#home">[|] vms rescue</a>
+				<a class="navbar-item logo" href="#home">[|] VMS Rescue</a>
 				
 				<!-- hamburger -->
 				<span class="navbar-burger" data-target="navbarMobile">
@@ -128,21 +110,28 @@
 		
 		<div class="hero-body">
 			
-			<div class="container has-text-left has-text-white" style="display: flex; flex-direction: column-reverse;">
+			<div class="container has-text-centered has-text-white">
 				
-				<h1 class="hero-font is-size-5-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInUp mb-4">
-					For SAP Fieldglass buyers & users
+				<h1 class="hero-font is-size-4-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInDown mb-4">
+					For buyer companies using SAP Fieldglass
 				</h1>
+				<hr>
 				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					Contingent & services process design
+					<span class="green-text">✓</span> Integration architecture services
 				</h2>
 				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					Hypercare & production engineering
+					<span class="green-text">✓</span> Hypercare & production support
 				</h2>
 				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					Integration architecture services
+					<span class="green-text">✓</span> Contingent & SOW process build
 				</h2>
 				
+			</div>
+			
+			<!-- Word cloud / info text -->
+			<div class="hero-info-text has-text-white">
+			  <p class="name is-size-6">Abhinav Kumar, CCWP</p>
+			  <p class="cert is-size-7"><em>Certified contingent workforce professional</em></p>
 			</div>
 			
 		</div>
@@ -253,7 +242,6 @@
 	<footer id="footer" class="footer main-font">
 		<div class="content has-text-centered">
 			<p>
-				<strong>[|]</strong><br><br>
 				<a class="title js-modal-trigger" id="cta" data-target="contactForm">
 					<i class="fa-solid fa-concierge-bell footer-social"></i>
 				</a>
@@ -264,7 +252,7 @@
 					<i class="fa-brands fa-linkedin footer-social"></i>
 				</a>
 				<br><br>
-				Site by Abhinav Kumar | 2026
+				<p class="is-size-7">Campaign, site, & content by Abhinav Kumar, CCWP | 2026<p>
 	    	</p>
 	  	</div>
 	</footer>
@@ -344,52 +332,24 @@
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	
 <script>
-  // Cross-browser smooth scroll with easing & navbar offset
-  function smoothScroll(targetSelector, duration = 600) {
-    const target = document.querySelector(targetSelector);
-    if (!target) return;
-
-    const navbar = document.querySelector('.navbar');
-    const navbarOffset = navbar ? navbar.offsetHeight : 0;
-
-    const startY = window.pageYOffset;
-    const targetY = target.getBoundingClientRect().top + startY - navbarOffset;
-    const diff = targetY - startY;
-    let startTime = null;
-
-    // cubic easing in/out
-    function easeInOutCubic(t) {
-      return t < 0.5
-        ? 4 * t * t * t
-        : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    }
-
-    function step(timestamp) {
-      if (!startTime) startTime = timestamp;
-      const time = timestamp - startTime;
-      const progress = Math.min(time / duration, 1);
-      const eased = easeInOutCubic(progress);
-
-      window.scrollTo(0, startY + diff * eased);
-
-      if (time < duration) {
-        requestAnimationFrame(step);
-      }
-    }
-
-    requestAnimationFrame(step);
-  }
-
-  // attach smooth scroll to all in-page links
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      const href = link.getAttribute('href');
-      if (!document.querySelector(href)) return;
-
-      e.preventDefault();
-      smoothScroll(href, 600); // adjust duration for cinematic feel
-    });
-  });
+// smooth scrolling javascript for non-Safari browsers
+	$(document).ready(function(){ 
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+				// Store hash
+				var hash = this.hash;
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash; }); }
+					// End if
+				});
+			});
 </script>
 
 	
@@ -424,7 +384,7 @@
   			"url": "https://vmsrescue.com",
   			"image": "",
   			"logo": "",
-			"description": "SAP Fieldglass consulting, integration, and implementation for federal, utility, and corporate clients.",
+			"description": "Integration, engineering, and process solutions for SAP Fieldglass buyers.",
 			"areaServed": "US",
 			"serviceType": [
 				"SAP Fieldglass consulting",
