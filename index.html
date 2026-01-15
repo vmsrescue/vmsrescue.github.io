@@ -4,38 +4,31 @@
 
 <head>
 	
-	<!-- html5 x-browser int'l char encoding support -->
 	<meta charset="utf-8">
 	
-	<!-- pre -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="photo_abhi.png" as="image" importance="high">
-	<link rel="preload" href="style.css" as="style">
+	<link rel="preload" as="style" href="style.css" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="style.css"></noscript>
 	
-	<!-- bulma css framework -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
-	<!-- fontawesome, animate on scroll, & animate css library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<!-- google fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Ranga&display=swap">
-	<!-- custom css -->
-	<link rel="stylesheet" href="style.css">
-	
-	<!-- seo meta tags; description: 60 chars max; theme-color: deep red color for mobile browser address bar -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Integration, engineering, and process solutions for SAP Fieldglass buyer companies.">
-	<!-- <meta name="keywords" content=""> -->
+	<meta name="keywords" content="sap fieldglass, s/4hana, ariba, successfactors, asapio, integration, api, configuration manager">
 	<meta name="author" content="Abhinav Kumar">
 	<meta name="robots" content="index, follow">
 	<meta name="theme-color" content="#491F1F">
 	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/css/bulma-extensions.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Ranga&display=swap">
 	<link rel="canonical" href="https://vmsrescue.com">
 	
-	<!-- social messaging preview -->
+	<title>VMS Rescue — Integration, engineering, and process solutions for SAP Fieldglass buyers.</title>
+	
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="photo_abhi.png" />
 	<meta property="og:title" content="[|] VMS Rescue - Abhinav Kumar | 2026" />
@@ -43,34 +36,21 @@
 	<meta property="og:description" content="Integration, engineering & process solutions for SAP Fieldglass buyers companies." />
 	<meta property="og:locale" content="en_US" />
 	
-	<title>[|] VMS Rescue — Integration, engineering, and process solutions for SAP Fieldglass buyers.</title>
-	
-	<!--
-	<link rel="icon" href="/favicon.ico" sizes="32x32" type="image/x-icon">
-	<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-	-->
-	
-	<style>
-		
-		/* must stay in html file, not css file */
-		html {scroll-behavior: smooth;}
-		
-	</style>
+	<style>html {scroll-behavior: smooth;}</style>
 	
 </head>
 
 <body>
 	
 	<!-- navbar -->
-	<header id="menu" class="navbar main-font">
+	<header id="menu" class="navbar font-1">
 		
 		<div class="container">
 			
 			<div class="navbar-brand">
 				
 				<!-- logo -->
-				<a class="navbar-item logo" href="#home">[|] VMS Rescue</a>
+				<a class="navbar-item navbar-logo" href="#home">VMS Rescue</a>
 				
 				<!-- hamburger -->
 				<span class="navbar-burger" data-target="navbarMobile">
@@ -87,11 +67,17 @@
 				<!-- nav anchors -->
 				<div class="navbar-end">
 					
-					<a class="navbar-item anchor" href="#customers"><i class="fa-solid fa-building"></i>Customers</a>
+					<a class="navbar-item navbar-anchor" href="#customers">
+						<i class="fa-solid fa-building"></i>
+						Customers
+					</a>
 					
-					<a class="navbar-item anchor" href="#"><i class="fa-solid fa-diagram-project"></i>Case Studies</a>
+					<a class="navbar-item navbar-anchor" href="#">
+						<i class="fa-solid fa-diagram-project"></i>
+						Case Studies
+					</a>
 					
-					<a class="navbar-item cta js-modal-trigger" target="" id="cta" data-target="contactForm">
+					<a class="navbar-item navbar-cta js-modal-trigger" id="cta" data-target="contactForm">
 						<i class="fa-solid fa-bell-concierge"></i>
 						Contact
 					</a>
@@ -105,29 +91,28 @@
 	</header>
 	
 	<!-- hero -->
-	<section id="home" class="hero is-fullheight main-font">
+	<section id="home" class="hero is-fullheight font-1">
 		
 		<div class="hero-body">
 			
 			<div class="container has-text-centered has-text-white">
 				
-				<h1 class="hero-font is-size-4-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInDown mb-4">
+				<h1 class="font-2 is-size-4-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInDown mb-4">
 					For buyer companies using SAP Fieldglass
 				</h1>
 				<hr>
 				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					<span class="green-text">✓</span> Integration architecture services
+					<span class="txt-green">✓</span> Integration architecture services
 				</h2>
 				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					<span class="green-text">✓</span> Hypercare & production support
+					<span class="txt-green">✓</span> Hypercare & production support
 				</h2>
 				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					<span class="green-text">✓</span> Contingent & SOW process build
+					<span class="txt-green">✓</span> Contingent & SOW process build
 				</h2>
 				
 			</div>
-			
-			<!-- Word cloud / info text -->
+		
 			<div class="hero-info-text has-text-white">
 			  <p class="name is-size-6">Abhinav Kumar, CCWP</p>
 			  <p class="cert is-size-7"><em>Certified contingent workforce professional</em></p>
@@ -138,11 +123,11 @@
 	</section>
 	
 	<!-- customers -->
-	<section id="customers" class="section bg-color main-font">
+	<section id="customers" class="section bg-blue font-1">
 		
 		<div class="container">
 			
-			<h2 class="title has-text-white">
+			<h2 class="title has-text-white font-2">
 				Customers
 			</h2>
 			
@@ -238,7 +223,7 @@
 	</section>
 	
 	<!-- footer -->
-	<footer id="footer" class="footer main-font">
+	<footer id="footer" class="footer font-1">
 		<div class="content has-text-centered">
 			<p>
 				<a class="title js-modal-trigger" id="cta" data-target="contactForm">
@@ -251,13 +236,13 @@
 					<i class="fa-brands fa-linkedin footer-social"></i>
 				</a>
 				<br><br>
-				<p class="is-size-7">Campaign, site, & content by Abhinav Kumar, CCWP | 2026<p>
+				<p class="is-size-7">Site & content by Abhinav Kumar, CCWP | 2026<p>
 	    	</p>
 	  	</div>
 	</footer>
 	
 	<!--contact form popup-->
-	<div class="modal" id="contactForm">
+	<div id="contactForm" class="modal">
 		
 		<div class="modal-background"></div>
 		
@@ -315,7 +300,7 @@
 					
 					<button class="button button-style" type="submit">
 						
-						<i class="fa-solid fa-envelopes-bulk"></i>&nbsp;Send my message
+						<i class="fa-solid fa-concierge-bell"></i>&nbsp;Send my message
 						
 					</button>
 					
@@ -327,30 +312,42 @@
 	
 	</div>
 	
+	
+	
 	<!-- js -->	
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	
-<script>
-// smooth scrolling javascript for non-Safari browsers
-	$(document).ready(function(){ 
-		// Add smooth scrolling to all links
-		$("a").on('click', function(event) {
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
-				// Prevent default anchor click behavior
-				event.preventDefault();
-				// Store hash
-				var hash = this.hash;
-				// Using jQuery's animate() method to add smooth page scroll
-				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-				$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash; }); }
-					// End if
+	<script>
+		// smooth scrolling javascript for non-Safari browsers
+		$(document).ready(function(){ 
+			
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					
+					// Prevent default anchor click behavior
+					event.preventDefault();
+					
+					// Store hash
+					var hash = this.hash;
+					
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					
+					$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
+						
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash; }); 
+					
+					}
+						
+				// End if
 				});
+				
 			});
-</script>
-
+		</script>
 	
 	<script>
 		// navbar burger
@@ -371,9 +368,7 @@
 	
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	
-	<script>
-	  AOS.init();
-	</script>
+	<script>AOS.init();</script>
 	  
   	<script type="application/ld+json">
 		{
@@ -385,28 +380,9 @@
   			"logo": "",
 			"description": "Integration, engineering, and process solutions for SAP Fieldglass buyers.",
 			"areaServed": "US",
-			"serviceType": [
-				"SAP Fieldglass consulting",
-				"VMS integration",
-				"SOW & contingent workforce management"
-				],
-			"sameAs": [
-				"https://www.linkedin.com/in/abhinavkumar"
-				],
-			"founder": {
-			      "@type": "Person",
-			      "name": "Abhinav Kumar",
-			      "url": "https://www.linkedin.com/in/abhinavkumar",
-				  "knowsAbout": [
-				        "SAP Fieldglass",
-				        "SAP Ariba",
-				        "SAP S/4HANA Cloud",
-				        "Contingent workforce management",
-				        "Services procurement",
-						"SAP Cloud Platform Integration",
-						"SAP Ariba Master Data Services"
-					]
-				}
+			"serviceType": ["SAP Fieldglass consulting","VMS integration","SOW & contingent workforce management"],
+			"sameAs": ["https://www.linkedin.com/in/abhinavkumar"],
+			"founder": {"@type": "Person","name": "Abhinav Kumar","url": "https://www.linkedin.com/in/abhinavkumar","knowsAbout": ["SAP Fieldglass","SAP Ariba","SAP S/4HANA Cloud","Contingent workforce management","Services procurement","SAP Cloud Platform Integration","SAP Ariba Master Data Services"]}
 		}
   	</script>
 	
