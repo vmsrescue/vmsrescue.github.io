@@ -27,11 +27,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Ranga&display=swap">
 	<link rel="canonical" href="https://vmsrescue.com">
 	
-	<title>VMS Rescue — Integration, engineering, and process solutions for SAP Fieldglass buyers.</title>
+	<title>VMS Rescue — Integration, engineering, and process solutions for SAP Fieldglass buyers — Abhinav Kumar, CCWP 2026</title>
 	
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="photo_abhi.png" />
-	<meta property="og:title" content="[|] VMS Rescue - Abhinav Kumar | 2026" />
+	<meta property="og:title" content="VMS Rescue - Abhinav Kumar, CCWP 2026" />
 	<meta property="og:url" content="https://vmsrescue.com" />
 	<meta property="og:description" content="Integration, engineering & process solutions for SAP Fieldglass buyers companies." />
 	<meta property="og:locale" content="en_US" />
@@ -40,10 +40,10 @@
 	
 </head>
 
-<body>
+<body class="font-1">
 	
 	<!-- navbar -->
-	<header id="menu" class="navbar font-1">
+	<header id="menu" class="navbar">
 		
 		<div class="container">
 			
@@ -71,12 +71,12 @@
 						<i class="fa-solid fa-building"></i>
 						Customers
 					</a>
-					
+					<!--
 					<a class="navbar-item navbar-anchor" href="#">
 						<i class="fa-solid fa-diagram-project"></i>
 						Case Studies
 					</a>
-					
+					-->
 					<a class="navbar-item navbar-cta js-modal-trigger" id="cta" data-target="contactForm">
 						<i class="fa-solid fa-bell-concierge"></i>
 						Contact
@@ -91,31 +91,22 @@
 	</header>
 	
 	<!-- hero -->
-	<section id="home" class="hero is-fullheight font-1">
+	<section id="home" class="hero is-fullheight">
 		
 		<div class="hero-body">
 			
 			<div class="container has-text-centered has-text-white">
 				
-				<h1 class="font-2 is-size-4-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInDown mb-4">
-					For buyer companies using SAP Fieldglass
+				<h1 class="font-2 is-size-3-mobile is-size-1-tablet animate__slower animate__animated animate__fadeInDown mb-4">
+					Fieldglass never fails quietly. I work fast to fix bugs & bottlenecks blocking buyer user adoption, ontime payment to suppliers, and compliance.
 				</h1>
-				<hr>
-				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					<span class="txt-green">✓</span> Integration architecture services
-				</h2>
-				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					<span class="txt-green">✓</span> Hypercare & production support
-				</h2>
-				<h2 class="is-size-5-mobile is-size-2-tablet animate__animated animate__slower animate__fadeIn mb-4">
-					<span class="txt-green">✓</span> Contingent & SOW process build
-				</h2>
 				
 			</div>
 		
 			<div class="hero-info-text has-text-white">
 			  <p class="name is-size-6">Abhinav Kumar, CCWP</p>
 			  <p class="cert is-size-7"><em>Certified contingent workforce professional</em></p>
+			  <p class="cert is-size-7"><em>SAPFG integration, config, and process expert</em></p>
 			</div>
 			
 		</div>
@@ -123,7 +114,7 @@
 	</section>
 	
 	<!-- customers -->
-	<section id="customers" class="section bg-blue font-1">
+	<section id="customers" class="section bg-blue">
 		
 		<div class="container">
 			
@@ -176,7 +167,7 @@
 					</div>
 					<div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
 						<h3 class="heading">Global technology and consulting firm</h3>
-						<p class="has-text-text">SAP Fieldglass implementation and integration with SAP Business Technology Platform</p>
+						<p class="has-text-text">Orchestrated end-to-end SAP Fieldglass integration for Fortune 100 end customer under strict federal constraints.</p>
 					</div>
 				</div>
 				
@@ -223,7 +214,7 @@
 	</section>
 	
 	<!-- footer -->
-	<footer id="footer" class="footer font-1">
+	<footer id="footer" class="footer">
 		<div class="content has-text-centered">
 			<p>
 				<a class="title js-modal-trigger" id="cta" data-target="contactForm">
@@ -241,7 +232,7 @@
 	  	</div>
 	</footer>
 	
-	<!--contact form popup-->
+	<!-- webform -->
 	<div id="contactForm" class="modal">
 		
 		<div class="modal-background"></div>
@@ -313,14 +304,11 @@
 	
 	</div>
 	
-	
-	
-	<!-- js -->	
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 	
 	<script>
 		// smooth scrolling javascript for non-Safari browsers
-		$(document).ready(function(){ 
+		$(document).ready(function() {
 			
 			// Add smooth scrolling to all links
 			$("a").on('click', function(event) {
@@ -334,36 +322,42 @@
 					// Store hash
 					var hash = this.hash;
 					
-					// Using jQuery's animate() method to add smooth page scroll
 					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-					
-					$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function(){
+					$('html, body').animate({scrollTop: $(hash).offset().top}, 500, function() {
 						
 						// Add hash (#) to URL when done scrolling (default click behavior)
-						window.location.hash = hash; }); 
+						window.location.hash = hash;
 					
-					}
+					}); 
+					
+				}
 						
-				// End if
-				});
-				
+			// End if
 			});
-		</script>
+				
+		});	
+	</script>
 	
 	<script>
 		// navbar burger
 		$(document).ready(function() {
-		  // Hamburger toggle
-		  $(".navbar-burger").click(function() {
-		    $(".navbar-burger").toggleClass("is-active");
-		    $(".navbar-menu").toggleClass("is-active");
-		  });
+			
+			// Hamburger toggle
+			$(".navbar-burger").click(function() {
+				
+				$(".navbar-burger").toggleClass("is-active");
+				$(".navbar-menu").toggleClass("is-active");
+			
+			});
 
-		  // Close menu when any navbar item is clicked
-		  $(".navbar-menu .navbar-item").click(function() {
-		    $(".navbar-burger").removeClass("is-active");
-		    $(".navbar-menu").removeClass("is-active");
+			// Close menu when any navbar item is clicked
+			$(".navbar-menu .navbar-item").click(function() {
+				
+				$(".navbar-burger").removeClass("is-active");
+				$(".navbar-menu").removeClass("is-active");
+				
 		  });
+		  
 		});
 	</script>
 	
@@ -388,47 +382,22 @@
   	</script>
 	
 	<script>
+		// webform
 		document.addEventListener('DOMContentLoaded', () => {
-			// Functions to open and close a modal
-			function openModal($el) {
-				$el.classList.add('is-active');
-			}
 			
-			function closeModal($el) {
-				$el.classList.remove('is-active');
-			}
-			
-			function closeAllModals() {
-				(document.querySelectorAll('.modal') || []).forEach(($modal) => {
-					closeModal($modal);
-				});
-			}
+			function openModal($el) {$el.classList.add('is-active');}
+			function closeModal($el) {$el.classList.remove('is-active');}
+			function closeAllModals() {(document.querySelectorAll('.modal') || []).forEach(($modal) => {closeModal($modal);});}
 			
 			// Add a click event on buttons to open a specific modal
-			(document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
-				const modal = $trigger.dataset.target;
-				const $target = document.getElementById(modal);
-				
-				$trigger.addEventListener('click', () => {
-					openModal($target);
-				});
-			});
+			(document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {const modal = $trigger.dataset.target;const $target = document.getElementById(modal);$trigger.addEventListener('click', () => {openModal($target);});});
 
 			// Add a click event on various child elements to close the parent modal
-			(document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
-				const $target = $close.closest('.modal');
-				
-				$close.addEventListener('click', () => {
-					closeModal($target);
-				});
-			});
+			(document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {const $target = $close.closest('.modal');$close.addEventListener('click', () => {closeModal($target);});});
 			
 			// Add a keyboard event to close all modals
-			document.addEventListener('keydown', (event) => {
-				if(event.key === "Escape") {
-					closeAllModals();
-				}
-			});
+			document.addEventListener('keydown', (event) => {if(event.key === "Escape") {closeAllModals();}});
+		
 		});
 	</script>
 	
